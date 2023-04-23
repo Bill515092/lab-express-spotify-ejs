@@ -1,0 +1,7 @@
+<div>
+  <% data = data.body.artists.items.map(element => { %>
+  <img src= "<%= element.images %>" alt="Artist Image" />
+  <h3><%- element.name %></h3>
+  <button>View Albums</button>
+  <% }); %>
+</div>
